@@ -1,0 +1,232 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 80px;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    /* align-items: center; */
+    position: sticky;
+    top: 0px;
+}
+
+/* Navbar : Logo and Image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 70px;
+    margin: 4px 7px;
+}
+
+/* Navbar : List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 20px 5px;
+}
+
+#navbar ul li a:hover {
+    color: rgb(12, 12, 12);
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 408px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("https://images.pexels.com/photos/952353/pexels-photo-952353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    font-family: 'Baloo 2', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Servises Section */
+.services-container h1{
+    padding-top: 40px;
+}
+#services {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(253, 253, 253);
+
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Clients Section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.client-item{
+    padding: 54px;
+}
+#clients img{
+    height: 135px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    /* margin-top: 50px; */
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url("https://images.pexels.com/photos/163007/phone-old-year-built-1955-bakelite-163007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#contact-box{
+    display: inline-flexbox;
+    padding-bottom: 35px;
+    width: 38%;
+    /* text-align: center; */
+    margin: auto;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5rem;    
+    font-size: 1.1rem;
+    /* text-align: center; */
+}
+
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background: black ;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Class */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid rgb(236, 230, 230);
+    background-color: brown;
+    color: rgb(245, 237, 237);
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.centre {
+    text-align: center;
+}
