@@ -11,26 +11,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <nav id="navbar">
         <div id="logo">
-            <img src="https://png.pngtree.com/png-vector/20220623/ourmid/pngtree-food-logo-png-image_5297921.png"
+            <img src="https://www.graphicsprings.com/filestorage/stencils/3055581cff0526602142cbb0bfba9fca.png?width=500&height=500"
                 alt="MyOnlineMeal.com">
         </div>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#services-container">Services</a></li>
-            <li class="item"><a href="#client-section">About Us</a></li>
+            <li class="item"><a href="#services-container">Top Deals</a></li>
+            <li class="item"><a href="#client-section">Orders</a></li>
             <li class="item"><a href="#contact">Contact us</a></li>
+            <div class="btn1">
+                <input type="text" placeholder="Search">
+            </div>
         </ul>
     </nav>
     <section id="home">
-        <h1 class="h-primary">Welcome to MyOnlineMeal.com</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img
+                        src="https://us.123rf.com/450wm/tandav/tandav2005/tandav200500020/147711636-summer-big-sale-banner-up-to-50-percent-limited-time-discount-promotion-hot-season-promo-with.jpg?ver=6"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://www.aeon.co.th/bigc/assets/img/static/promotion/card-big-c-summer-splash.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://www.shutterstock.com/image-vector/1010-shopping-day-mega-sale-260nw-2197070569.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://t4.ftcdn.net/jpg/03/69/56/03/360_F_369560378_YZzotWtTPwBO1D08ef0eVlargSPnrIRG.jpg"
+                        alt=""></div>
+                <div class="swiper-slide"><img
+                        src="https://www.shutterstock.com/image-vector/gradient-colored-end-season-sale-260nw-2029881266.jpg"
+                        alt=""></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+        <!-- <h1 class="h-primary">Welcome to MyOnlineMeal.com</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, corrupti cupiditate unde dignissimos odit
             sint iusto excepturi necessitatibus !</p>
-        <button class="btn">Order Now</button>
+        <button class="btn">Order Now</button> -->
     </section>
 
     <section id="services-container">
@@ -110,6 +145,25 @@
         </div>
         <footer class="centre">Copyriright &copy; www.MyOnlineMeal.com All rights reserved!!</footer>
     </section>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 
